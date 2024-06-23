@@ -1,0 +1,48 @@
+.hero
+  margin-bottom: rem(164px)
+  overflow: hidden
+  @include tablets
+    margin-bottom: rem(82px)
+.hero__content
+  position: relative
+  &:before
+    content: url("./images/lamps.png")
+    display: block
+    position: absolute
+    right: -230px
+    top: -40px
+    @include tablets
+      display: none
+.hero__text-section
+  width: 55%
+  @include tablets
+    width: 100%
+    text-align: center
+  
+.hero__title
+  font-size: rem(49px)
+  font-weight: bold
+  color: #141419
+  margin-bottom: rem(15px)
+  @include tablets
+    line-height: 1.1
+    font-size: rem(45px)
+  @include phones
+    font-size: rem(43px)
+  & span
+    background: linear-gradient(to right, #fb973b 100%, #fff 0%)
+    background-repeat: repeat-x
+    background-size: rem(20px) rem(8px)
+    background-position: left bottom rem(12px)
+    
+.hero__description
+  width: 47%
+  font-size: rem(21px)
+  margin-bottom: rem(32px)
+  & span
+    color: #fb973b
+  @include tablets
+    width: 100%
+
+.hero__form
+  display: inline-flex

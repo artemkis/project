@@ -1,0 +1,81 @@
+.section__title span
+  display: inline-block
+  background: linear-gradient(to right, #fb973b 100%, #fff 0%)
+  background-repeat: repeat-x
+  background-size: rem(20px) rem(8px)
+  background-position: left bottom rem(18px)
+  font-size: rem(49px)
+  font-weight: bold
+  color: #141419
+  margin: 0 auto
+  margin-bottom: 4px
+  @include tablets
+    font-size: rem(45px)
+  @include phones
+    font-size: rem(43px)
+
+.section__headline
+  text-align: center
+  margin-bottom: rem(30px)
+
+.section__description
+  max-width: rem(410px)
+  text-align: center
+  display: inline-block
+  font-size: rem(21px)
+  & span
+    color: #fb973b
+
+.section__box
+  display: flex
+  width: 69%
+  margin: 0 auto
+
+.section__item
+  text-align: center
+  font-size: rem(15px)
+  &:first-child
+    &::before
+      top: 19px 
+    &::after
+      display: none   
+    .section__number
+      margin-top: 0
+  position: relative
+  &::before,
+  &::after
+    content: ""
+    display: block
+    width: rem(1px)
+    height: rem(20px)
+    background: #fb973b
+    position: absolute
+    left:50%
+    transform: translateX(-50%)
+  &:before
+    top: 42px
+  &::after
+    top: 5px
+    
+.section__number
+  width: rem(18px)
+  height: rem(18px)
+  border-radius: 50%
+  border: 1px solid #fb973b
+  line-height: rem(18px)
+  font-size: rem(12px)
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  color: #fb973b
+  margin-bottom: rem(24px)
+  margin-top: rem(24px)
+
+
+.section__benefits
+  flex: 1
+
+.section__img
+  width: rem(320px)
+  @include tablets
+    display: none

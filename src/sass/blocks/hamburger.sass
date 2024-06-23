@@ -1,0 +1,27 @@
+@include tablets
+  .hamburger
+    width: rem(30px)
+    position: fixed
+    top: rem(40px)
+    right: rem(30px)
+    height: rem(14px)
+    z-index: 30
+    span
+      height: 2px
+      width: 100%
+      display: block
+      background: black
+      margin-bottom: 4px
+      transition: 1s 
+      &:last-child
+          margin-bottom: 0
+          
+.hamburger_active
+  span
+    margin-bottom: -2px
+    &:nth-child(1)
+      transform: translateY(3px) rotate(-45deg)
+    &:nth-child(2)
+      display: none
+    &:nth-child(3)
+      transform: translateY(3px) rotate(45deg)

@@ -1,0 +1,61 @@
+.dropdown 
+  position: relative
+  display: inline-block
+  cursor: pointer
+  @include tablets
+   display: none
+  &:hover
+    .dropdown__link
+      text-decoration: none  
+    .dropdown__menu
+      left: -50px
+      opacity: 1
+  
+.dropdown__link 
+    font-size: rem(16px)
+
+.dropdown__menu 
+    position: absolute
+    background: #f8ae6a
+    border-radius: 5px
+    padding: rem(10px)
+    width: rem(132px)
+    top: 100%
+    margin-top: rem(10px)
+    opacity: 0
+    transition: opacity .4s
+    left: -9999px
+    height: rem(60px)
+    &:before 
+      content: ""
+      position: absolute
+      display: block
+      height: rem(30px)
+      left: 0
+      right: 0
+      top: -29px
+
+.dropdown__triangle 
+    position: absolute
+    top: rem(-15px)
+    left: rem(90px)
+    border: 11px solid transparent
+    width: 0px
+    height: 0px
+    border-left-width: rem(10px)
+    border-right-width: rem(10px)
+    border-bottom-color: #f8ae6a
+    border-top-width: 5px
+
+.dropdown__time 
+    font-size: rem(13px)
+    font-weight: bold
+    color: #1E1F20
+    text-align: center
+
+.dropdown__lunch 
+    font-size: rem(13px)
+    color: #1E1F20
+    text-align: center
+
+  

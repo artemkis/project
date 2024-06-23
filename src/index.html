@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="main.min.css">
+  <title>Главная страница</title>
+</head>
+<body>
+  <div class="wrapper">
+    <section class="hero">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="container">
+        <header class="header">
+          <a href="/" class="logo">
+            <img src="./images/Logo.png" alt="элипслед" class="logo_img">
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Нам доверяют</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Фотографии</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Сертификаты</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Где наc найти?</a></li>
+            </ul>
+          </nav>
+          <address class="contacts">
+            <a href="tel:+79152543992" class = "contacts_phone">8 915 254 39 92</a>
+            <div class="dropdown">
+              <a href="#" class="dropdown__link">График работы</a>
+              <div class="dropdown__menu">
+                  <div class="dropdown__triangle"></div>
+                  <div class="dropdown__time">пн-вс: 09:00 - 20:00</div>
+                  <div class="dropdown__lunch">Обед: 14:00-14:30</div>
+              </div>
+          </div>
+          </address>
+        </header>
+        <div class="hero__content">
+          <div class="hero__text-section">
+           <h1 class="hero__title"><span>У нас вы найдете лучшие</span><span> светодиодные лампы</span><span> для животноводства</span></h1> 
+           <div class="hero__description">Оставьте нам свой номер, и получите <span>бесплатный</span> рассчет специально для вас!</div>
+           <form class="form hero__form">
+              <div class="form__row">
+                <input type="text" placeholder="7 (xxx) xxx xx xx" class="form__input">
+              </div>
+              <div class ="form__btns">
+                <button type="submit" class="btn btn_color_brown">отправить</button>
+              </div>
+           </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section__headline">
+          <h2 class="section__title"><span>Расскажем вам </span><span>&nbspнемного о себе</span></h2>
+          <div class="section__description">Мы ценим ваше время, по этому мы постараемся рассказать о <span>главном вкратце!</span></div>
+        </div>
+        <div class="section__box">
+          <div class="section__img">
+            <img src="./images/lamps2.png"  alt="">
+          </div>
+          <ul class="section__benefits">
+            <li class="section__item"> 
+              <div class="section__number">1</div>
+              <div class="section__text">Наша компания была основана в 2015 году, название ей «ЭлипсЛед». Занимаемся мы производством светильников для животноводства</div>
+            </li>
+            <li class="section__item">
+              <div class="section__number">2</div>
+              <div class="section__text">Работаем мы исключительно на собственном оборудовании и только с качественным сырьем.</div>
+            </li>
+            <li class="section__item">
+              <div class="section__number">3</div>
+              <div class="section__text">С помощью команды наших специалистов мы смогли добиться одного из самых высоких уровней качества светодиодных светильников для свиноводства, КРС, выращивания грибов!</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./main.min.js"></script>
+</body>
+</html>
